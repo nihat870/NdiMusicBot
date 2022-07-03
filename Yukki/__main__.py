@@ -127,8 +127,8 @@ async def initiate_bot():
             console.print(f"\n[red]Bot Berhenti")
             return
         try:
-            await ASS_CLI_1.join_chat("chFZsokin")
-            await ASS_CLI_1.join_chat("friendzonesokin")
+            await ASS_CLI_1.join_chat("Fake_Love_33")
+            await ASS_CLI_1.join_chat("COSMIC_VIBES_33")
         except:
             pass
         console.print(f"├[red] Asisten Berhasil Dimulai {ASSNAME1}!")
@@ -146,8 +146,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_2.join_chat("chFZsokin")
-            await ASS_CLI_2.join_chat("friendzonesokin")
+            await ASS_CLI_2.join_chat("Fake_Love_33")
+            await ASS_CLI_2.join_chat("COSMIC_VIBES_33")
         except:
             pass
         console.print(f"├[red] Assistant 2 Started as {ASSNAME2}!")
@@ -165,8 +165,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_3.join_chat("chFZsokin")
-            await ASS_CLI_3.join_chat("friendzonesokin")
+            await ASS_CLI_3.join_chat("Fake_Love_33")
+            await ASS_CLI_3.join_chat("COSMIC_VIBES_33")
         except:
             pass
         console.print(f"├[red] Assistant 3 Started as {ASSNAME3}!")
@@ -184,8 +184,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_4.join_chat("chFZsokin")
-            await ASS_CLI_4.join_chat("friendzonesokin")
+            await ASS_CLI_3.join_chat("Fake_Love_33")
+            await ASS_CLI_3.join_chat("COSMIC_VIBES_33")
         except:
             pass
         console.print(f"├[red] Assistant 4 Started as {ASSNAME4}!")
@@ -203,8 +203,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_5.join_chat("chFZsokin")
-            await ASS_CLI_5.join_chat("friendzonesokin")
+            await ASS_CLI_3.join_chat("Fake_Love_33")
+            await ASS_CLI_3.join_chat("COSMIC_VIBES_33")
         except:
             pass
         console.print(f"├[red] Assistant 5 Started as {ASSNAME5}!")
@@ -222,8 +222,8 @@ async def initiate_bot():
             console.print(f"\n[red]Bot Berhenti")
             return
         try:
-            await LOG_CLIENT.join_chat("chFZsokin")
-            await LOG_CLIENT.join_chat("friendzonesokin")
+            await ASS_CLI_3.join_chat("Fake_Love_33")
+            await ASS_CLI_3.join_chat("COSMIC_VIBES_33")
         except:
             pass
     console.print(f"└[red] GLOBAL Music Bot-u yenidən başladın.")
