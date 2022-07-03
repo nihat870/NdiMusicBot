@@ -42,7 +42,7 @@
 > Always remeber to use good API combo else your account could be deleted.
 
 Generate Session via Repl:   
-[![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-white)](https://replit.com/@Achmad-TaufiqTa/NdiString-1?lite=1&outputonly=1)
+[![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-white)](https://replit.com/@Ndiproject/Ndi-String?v=1)
 
 </details>
 
