@@ -94,12 +94,12 @@ async def initiate_bot():
             status="[bold blue]Selesai mengimport!",
         )
     console.print(
-        "[bold green]Selamat!! Ndi Music Bot Berhasil Dimulai!\n"
+        "[bold green]Xoşbəxt!! GLOBAL Musiqi Botu Uğurla Başladı!\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>Selamat!! Music Bot Berhasil Dimulai!</b>",
+            "<b>Xoşbəxt!! Assistent Hesabı Uğurla Başladı!</b>",
         )
     except Exception as e:
         print(
@@ -118,7 +118,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_1.send_message(
                 LOG_GROUP_ID,
-                "<b>Selamat!! Akun Asisten Berhasil Dimulai!</b>",
+                "<b>Xoşbəxt!! Assistent Hesabı Uğurla Başladı!</b>",
             )
         except Exception as e:
             print(
@@ -226,7 +226,7 @@ async def initiate_bot():
             await LOG_CLIENT.join_chat("friendzonesokin")
         except:
             pass
-    console.print(f"└[red] Ndi Music Bot Memulai Ulang Selesai.")
+    console.print(f"└[red] GLOBAL Music Bot-u yenidən başladın.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
@@ -240,20 +240,20 @@ async def initiate_bot():
     await idle()
     console.print(f"\n[red]Bot Berhenti")
 
-home_text_pm = f"""✨ **Hello, Selamat Datang!**
+home_text_pm = f"""✨ **Salam, Xoş gəldiniz!**
 
-🤖{BOT_NAME} **Adalah Bot musik telegram untuk memutar musik+video di obrolan suara Telegram**! Contoh :
+🤖{BOT_NAME} **Telegram səsli söhbətində musiqi+videoları oynamaq üçün telegram musiqi botu**!
 
 ╭┉┉┅┅┄┄┄┄•◦ೋ•◦❥•◦ೋ
-⧱ Play music.
-⧱ Play video.
-⧱ Download song.
-⧱ Download video.
-⧱ Search YT Link with inline.
+⧱ Musiqi çalın.
+⧱ Videoları oynayın.
+⧱ Mahnılar yükləyin.
+⧱ Videoları yükləyin.
+⧱ YOUTUBE Linkində Online ilə axtarın.
  •◦ೋ•◦❥•◦ೋ•┈┄┄┄┄┅┅┉╯
 
 
-💡Temukan semua command bot musik di menu » Menu Perintah«!"""
+💡Menyuda bütün musiqi bot əmrlərini tapın » Komanda Menyu«!"""
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -318,7 +318,7 @@ async def start_command(_, message):
                 reply_markup=keyboard,
             )
         if name[0] == "i":
-            m = await message.reply_text("🔎 Mencari Informasi!")
+            m = await message.reply_text("🔎 Məlumat axtarılır!")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -332,26 +332,26 @@ async def start_command(_, message):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Informasi Trek Video**__
+🔍__**Video Track Məlumatı**__
 
-🎸**Judul:** {title}
+🎸**Başlıq:** {title}
 
-⏳**Durasi:** {duration} Menit
-👀**Melihat:** `{views}`
-⏰**Waktu Publikasi:** {published}
-🎥**Nama Channel:** {channel}
-📎**Link Channel:** [Lihat Disini]({channellink})
-🔗**Link Video:** [Link]({link})
+⏳**Müddət:** {duration} Menit
+👀**Görmək:** `{views}`
+⏰**Nəşr vaxtı:** {published}
+🎥**Kanal Adı:** {channel}
+📎**Kanal Linki:** [Lihat Disini]({channellink})
+🔗**Video Linki:** [Link]({link})
 
 💫__Pencarian Dipersembahkan oleh {BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 Menonton Video YouTube", url=f"{link}"
+                            text="🎥 YouTube Videolarına baxmaq", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="✖️ Tutup", callback_data="close"
+                            text="✖️ bagla", callback_data="close"
                         ),
                     ],
                 ]
