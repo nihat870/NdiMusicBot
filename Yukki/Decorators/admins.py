@@ -12,7 +12,7 @@ def AdminRightsCheck(mystic):
     async def wrapper(_, message):
         if message.sender_chat:
             return await message.reply_text(
-                "Kamu adalah __Admin Anonim__!\nKembalikan ke akun Admin biasa."
+                "Sən __Admin Anonim__!\nNormal Admin hesabına qayıdın."
             )
         is_non_admin = await is_nonadmin_chat(message.chat.id)
         if not is_non_admin:
@@ -25,7 +25,7 @@ def AdminRightsCheck(mystic):
                     _check = await get_authuser_names(message.chat.id)
                     if token not in _check:
                         return await message.reply(
-                            "Anda tidak memiliki izin yang diperlukan untuk melakukan tindakan ini.\n\n__MEMBUTUHKAN ADMIN DENGAN HAK MENGELOLA OBROLAN SUARA__"
+                            "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələriniz yoxdur.\n\n__SƏSLİ SAHİBİ İDARƏ ETMƏ HÜQUQLARI OLAN ADMIN LAZIMDIR__"
                         )
         return await mystic(_, message)
 
@@ -36,14 +36,14 @@ def AdminActual(mystic):
     async def wrapper(_, message):
         if message.sender_chat:
             return await message.reply_text(
-                "Kamu adalah __Admin Anonim__!\nKembalikan ke akun Admin biasa."
+                "Sən __Admin Anonim__!\nNormal Admin hesabına qayıdın."
             )
         member = await app.get_chat_member(
             message.chat.id, message.from_user.id
         )
         if not member.can_manage_voice_chats:
             return await message.reply(
-                "Anda tidak memiliki izin yang diperlukan untuk melakukan tindakan ini.\n\n__MEMBUTUHKAN ADMIN DENGAN HAK MENGELOLA OBROLAN SUARA__"
+                "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələrə malik deyilsiniz.\n\n__SƏSLİ SOHBET İDARƏETMƏ HÜQUQLARI OLAN ADMINDAN TƏLƏB EDİN__"
             )
         return await mystic(_, message)
 
@@ -65,7 +65,7 @@ def AdminRightsCheckCB(mystic):
                     )
                     if token not in _check:
                         return await CallbackQuery.answer(
-                            "Anda tidak memiliki izin yang diperlukan untuk melakukan tindakan ini.\nIjin: MEMBUTUHKAN ADMIN DENGAN HAK MENGELOLA OBROLAN SUARA",
+                            "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələrə malik deyilsiniz.\nİcazələr: HÜQUQLARI İDARƏ ETMƏK ÜÇÜN SƏSLİ SÖHBƏTLİ ADMIN TƏLƏB EDİR",
                             show_alert=True,
                         )
         return await mystic(_, CallbackQuery)
@@ -80,7 +80,7 @@ def ActualAdminCB(mystic):
         )
         if not a.can_manage_voice_chats:
             return await CallbackQuery.answer(
-                "Anda tidak memiliki izin yang diperlukan untuk melakukan tindakan ini.\nIjin: MEMBUTUHKAN ADMIN DENGAN HAK MENGELOLA OBROLAN SUARA",
+                "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələrə malik deyilsiniz.\nİcazələr: HÜQUQLARI İDARƏ ETMƏK ÜÇÜN SƏSLİ SÖHBƏTLİ ADMIN TƏLƏB EDİR",
                 show_alert=True,
             )
         return await mystic(_, CallbackQuery)
