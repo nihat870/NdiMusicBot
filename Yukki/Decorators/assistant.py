@@ -19,7 +19,7 @@ async def unban_assistant_(_, CallbackQuery):
     a = await app.get_chat_member(CallbackQuery.message.chat.id, BOT_ID)
     if not a.can_restrict_members:
         return await CallbackQuery.answer(
-            "Saya tidak memiliki ijin pengguna Ban/Unban. Minta admin untuk membatalkan pemblokiran asisten.",
+            "İstifadəçi icazəm yoxdur.  Admindən köməkçini blokdan çıxarmağı xahiş edin.",
             show_alert=True,
         )
     else:
@@ -29,11 +29,11 @@ async def unban_assistant_(_, CallbackQuery):
             )
         except:
             return await CallbackQuery.answer(
-                "Gagal membuka pemblokiran",
+                "Blokdan çıxarmaq alınmadı",
                 show_alert=True,
             )
         return await CallbackQuery.edit_message_text(
-            "Asisten Tidak Diblokir. Coba Mainkan Sekarang."
+            "Assistent blokdan çıxarıldı.  İndi Oynamağa cəhd edin."
         )
 
 
@@ -71,12 +71,12 @@ def AssistantAdd(mystic):
             )
             if b.status == "kicked":
                 return await message.reply_text(
-                    f"Asisten Akun[{ASS_ID}] Ditendang.\nMasukan kembali Asisten dengan ketik /play untuk menggunakan Bot\n\nUsername: @{ASS_USERNAME}",
+                    f"Hesab köməkçisi[{ASS_ID}] işə salındı.\nBotdan istifadə etmək üçün /play yazaraq Assistentə yenidən daxil olun\n\nİstifadəçi adı: @{ASS_USERNAME}",
                     reply_markup=key,
                 )
             if b.status == "banned":
                 return await message.reply_text(
-                    f"Asisten Akun[{ASS_ID}] Diblokir.\nLepaskan Blokir untuk menggunakan Bot\n\nUsername: @{ASS_USERNAME}",
+                    f"Hesab köməkçisi[{ASS_ID}] Blok edilib.\Botdan istifadə etmək üçün blokdan çıxarın\n\nİstifadəçi adı: @{ASS_USERNAME}",
                     reply_markup=key,
                 )
         except UserNotParticipant:
@@ -87,7 +87,7 @@ def AssistantAdd(mystic):
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__Asisten Gagal Bergabung__\n\n**Alasan**: {e}"
+                        f"__Assistent qoşula bilmədi__\n\n**Səbəb**: {e}"
                     )
                     return
             else:
@@ -101,13 +101,13 @@ def AssistantAdd(mystic):
                         )
                     await ASS_ACC.join_chat(invitelink)
                     await message.reply(
-                        f"{ASS_NAME} Berhasil Bergabung",
+                        f"{ASS_NAME} Uğurla Qoşuldu",
                     )
                 except UserAlreadyParticipant:
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__Asisten Gagal Bergabung __\n\n**Alasan**: {e}"
+                        f"__Assistent qoşula bilmədi __\n\n**Səbəb**: {e}"
                     )
                     return
         return await mystic(_, message)
