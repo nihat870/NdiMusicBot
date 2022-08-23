@@ -21,7 +21,7 @@ def download(videoid: str, mystic, title) -> str:
     url = f"https://www.youtube.com/watch?v={videoid}"
 
     def my_hook(d):
-        if d["status"] == "Pengunduhan":
+        if d["status"] == "Yükləmələr":
             percentage = d["_percent_str"]
             per = (str(percentage)).replace(".", "", 1).replace("%", "", 1)
             per = int(per)
@@ -38,7 +38,7 @@ def download(videoid: str, mystic, title) -> str:
                 try:
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME} Mengunduh**\n\n**Judul:** {title[:50]}:\n**Ukuran File:** {size}\n\n**<u>Diunduh:</u>**\n**Kecepatan:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+                            f"**{MUSIC_BOT_NAME} Yüklə**\n\n**Başlıq:** {title[:50]}:\n**Fayl ölçüsü:** {size}\n\n**<u>Endirildi:</u>**\n**Sürət:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
                         )
                 except Exception as e:
                     pass
@@ -47,30 +47,30 @@ def download(videoid: str, mystic, title) -> str:
                     flex[str(bytesx)] += 1
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME}Mengunduh**\n\n**Judul:** {title[:50]}:\n**Ukuran File:** {size}\n\n**<u>Diunduh:</u>**\n**Kecepatan:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ███▓▓▓▓▓▓▓▓▓ 100%"
+                            f"**{MUSIC_BOT_NAME} Yüklə**\n\n**Başlıq:** {title[:50]}:\n**Fayl ölçüsü:** {size}\n\n**<u>Endirildi:</u>**\n**Sürət:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ███▓▓▓▓▓▓▓▓▓ 100%"
                         )
             if per > 500:
                 if flex[str(bytesx)] == 3:
                     flex[str(bytesx)] += 1
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME} Mengunduh**\n\n**Judul:** {title[:50]}:\n**Ukuran File:** {size}\n\n**<u>Diunduh:</u>**\n**Kecepatan:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ██████▓▓▓▓▓▓ 100%"
+                            f"**{MUSIC_BOT_NAME} Yüklə**\n\n**Başlıq:** {title[:50]}:\n**Fayl ölçüsü:** {size}\n\n**<u>Endirildi:</u>**\n**Sürət:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ██████▓▓▓▓▓▓ 100%"
                         )
             if per > 800:
                 if flex[str(bytesx)] == 4:
                     flex[str(bytesx)] += 1
                     if eta > 2:
                         mystic.edit(
-                            f"**{MUSIC_BOT_NAME} Mengunduh**\n\n**Judul:** {title[:50]}:\n**Ukuran File:** {size}\n\n**<u>Diunduh:</u>**\n**Kecepatan:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ██████████▓▓ 100%"
+                            f"**{MUSIC_BOT_NAME} Yüklə**\n\n**Başlıq:** {title[:50]}:\n**Fayl ölçüsü:** {size}\n\n**<u>Endirildi:</u>**\n**Sürət:** {speed}\n**ETA:** {eta} Detik\n\n\n{percentage} ██████████▓▓ 100%"
                         )
-        if d["status"] == "Selesai":
+        if d["status"] == "Bitdi":
             try:
                 taken = d["_elapsed_str"]
             except Exception as e:
                 taken = "00:00"
             size = d["_total_bytes_str"]
             mystic.edit(
-                f"**{MUSIC_BOT_NAME} Mengunduh**\n\n**Judul:** {title[:50]}:\n\n100% ████████████100%\n\n**Waktu Dibutuhkan:** {taken} Detik\n\nKonversi Audio[FFmpeg Process]"
+                f"**{MUSIC_BOT_NAME} Yüklə**\n\n**Başlıq:** {title[:50]}:\n\n100% ████████████100%\n\n**Vaxt Tələb olunur:** {taken} İkinci\n\nAudio çevir[FFmpeg Process]"
             )
 
     ydl_optssx = {
