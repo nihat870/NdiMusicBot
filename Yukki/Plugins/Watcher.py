@@ -38,5 +38,5 @@ async def chat_watcher_func(_, message):
         except Exception:
             return
         await message.reply_text(
-            f"{checking} Secara keseluruhan telah diblokir oleh Pengguna Sudo dan telah dikeluarkan dari group.\n\n**Kemungkinan alasannya:** Potensi Mengganggu atau Penyalahgunaan."
+            f"{checking} Ümumilikdə o, sudo İstifadəçisi tərəfindən bloklanıb və qrupdan çıxarılıb.\n\n**Mümkün səbəblər:** Potensial pozulma və ya sui-istifadə."
         )
