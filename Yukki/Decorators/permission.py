@@ -10,27 +10,27 @@ def PermissionCheck(mystic):
         a = await app.get_chat_member(message.chat.id, BOT_ID)
         if a.status != "administrator":
             return await message.reply_text(
-                "Saya perlu menjadi admin dengan beberapa ijin:\n"
-                 + "\n- can_manage_voice_chats: Untuk mengelola obrolan suara"
-                 + "\n- can_delete_messages: Untuk menghapus Sampah yang Dicari Bot"
-                 + "\n- can_invite_users: Untuk mengundang asisten untuk mengobrol."
+                "Bəzi icazələri olan admin olmalıyam:\n"
+                 + "\n- can_manage_voice_chats: Səsli söhbəti idarə etmək üçün"
+                 + "\n- can_delete_messages: Botun Axtarılan Zibil qutusunu silmək üçün"
+                 + "\n- can_invite_users: Köməkçini söhbətə dəvət etmək."
              )
         if not a.can_manage_voice_chats:
             await message.reply_text(
-                "Saya tidak memiliki ijin yang diperlukan untuk melakukan tindakan ini."
-                 + "\nIzin: __MENGELOLA OBROLAN SUARA__"
+                "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələrim yoxdur."
+                 + "\nİcazələr: __SƏSLİNİ İDARƏ EDİN__"
              )
             return
         if not a.can_delete_messages:
             await message.reply_text(
-                "Saya tidak memiliki ijin yang diperlukan untuk melakukan tindakan ini."
-                 + "\nIzin: __HAPUS PESAN__"
+                "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələrim yoxdur."
+                 + "\nİcazələr: __MESSAGE_ SİL_"
              )
             return
         if not a.can_invite_users:
             await message.reply_text(
-                "Saya tidak memiliki ijin yang diperlukan untuk melakukan tindakan ini."
-                 + "\nIzin: UNDANG PENGGUNA MELALUI TAUTAN"
+                "Bu əməliyyatı yerinə yetirmək üçün lazımi icazələrim yoxdur."
+                 + "\nİcazə: LİNKDƏN İSTİFADƏÇİLƏRİ DƏVƏT EDİN"
              )
             return
         return await mystic(_, message)
