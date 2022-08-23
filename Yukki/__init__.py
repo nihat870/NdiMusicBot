@@ -99,43 +99,43 @@ async def initiate_bot():
     global ASSID5, ASSNAME5, ASSMENTION5, ASSUSERNAME5
     global Heroku_cli, Heroku_app
     os.system("clear")
-    header = Table(show_header=True, header_style="bold yellow")
+    header = Table(show_header=True, header_style="qalın sarı")
     header.add_column(
         "\x59\x75\x6b\x6b\x69\x20\x4d\x75\x73\x69\x63\x20\x42\x6f\x74\x20\x3a\x20\x54\x68\x65\x20\x4d\x6f\x73\x74\x20\x41\x64\x76\x61\x6e\x63\x65\x64\x20\x4d\x75\x73\x69\x63\x20\x42\x6f\x74"
     )
     console.print(header)
     with console.status(
-        "[magenta] Ndi Music Bot Memulai...",
+        "[qırmızı] King Music Bot Başlamaq...",
     ) as status:
-        console.print("┌ [red]Memulai Ulang Klien...\n")
+        console.print("┌ [red]Bot yenidən başladın...\n")
         await app.start()
-        console.print("└ [green]Memulai Ulang Bot Klien")
-        console.print("\n┌ [red]Memulai Ulang Asisten Klien...")
+        console.print("└ [green]Bot yenidən işə salınır")
+        console.print("\n┌ [red]Bot yenidən işə salınır...")
         if STRING1 != "None":
             await ASS_CLI_1.start()
             random_assistant.append(1)
-            console.print("├ [yellow]Memulai Ulang Asisten Klien")
+            console.print("├ [yellow]Bot yenidən işə salınır")
         if STRING2 != "None":
             await ASS_CLI_2.start()
             random_assistant.append(2)
-            console.print("├ [yellow]Memulai Ulang Asisten Klien 2")
+            console.print("├ [yellow]Bot yenidən işə salınır 2")
         if STRING3 != "None":
             await ASS_CLI_3.start()
             random_assistant.append(3)
-            console.print("├ [yellow]Memulai Ulang Asisten Klien 3")
+            console.print("├ [yellow]Bot yenidən işə salınır 3")
         if STRING4 != "None":
             await ASS_CLI_4.start()
             random_assistant.append(4)
-            console.print("├ [yellow]Memulai Ulang Asisten Klien 4")
+            console.print("├ [yellow]Bot yenidən işə salınır 4")
         if STRING5 != "None":
             await ASS_CLI_5.start()
             random_assistant.append(5)
-            console.print("├ [yellow]Memulai Ulang Asisten Klien 5")
-        console.print("└ [green]Memulai Ulang Asisten Klien Berhasil!")
+            console.print("├ [yellow]Bot yenidən işə salınır 5")
+        console.print("└ [green]Bot köməkçisinin yenidən işə salınması uğurlu oldu!")
         if LOG_SESSION != "None":
-            console.print("\n┌ [red]Memulai Ulang Log Klien")
+            console.print("\n┌ [red]Botun Girişi yenidən başladılır")
             await LOG_CLIENT.start()
-            console.print("└ [green]Memulai Ulang Log Klien Berhasil!")
+            console.print("└ [green]Botun Girişi Uğurla Yenidən Başladı!")
         if "raw_files" not in listdir():
             mkdir("raw_files")
         if "downloads" not in listdir():
@@ -144,7 +144,7 @@ async def initiate_bot():
             mkdir("cache")
         if "search" not in listdir():
             mkdir("search")
-        console.print("\n┌ [red]Menunggu Informasi Klien...")
+        console.print("\n┌ [red]Müştəri məlumatını gözləyirik...")
         getme = await app.get_me()
         BOT_ID = getme.id
         if getme.last_name:
@@ -207,8 +207,8 @@ async def initiate_bot():
             )
             ASSUSERNAME5 = getme5.username
             ASSMENTION5 = getme5.mention
-        console.print("└ [green]Menunggu Informasi Klien!")
-        console.print("\n┌ [red]Menunggu Pengguna Sudo...")
+        console.print("└ [green]Müştəri məlumatlarını gözləyirik!")
+        console.print("\n┌ [red]Sudo İstifadəçisi gözlənilir...")
         sudoersdb = db.sudoers
         sudoers = await sudoersdb.find_one({"sudo": "sudo"})
         sudoers = [] if not sudoers else sudoers["sudoers"]
@@ -221,15 +221,15 @@ async def initiate_bot():
                     upsert=True,
                 )
         SUDOERS = (SUDOERS + sudoers + OWNER_ID) if sudoers else SUDOERS
-        console.print("└ [green]Memeriksa Pengguna Sudo Berhasil!\n")
+        console.print("└ [green]Sudo İstifadəçisinin Yoxlanması Uğurlu!\n")
         try:
             repo = Repo()
         except GitCommandError:
-            console.print("┌ [red] Memeriksa Pembaruan Git!")
-            console.print("└ [red] Kesalahan Perintah Git\n")
+            console.print("┌ [red] Git Yeniləmələri yoxlanılır!")
+            console.print("└ [red] Git Komanda xətası\n")
             return
         except InvalidGitRepositoryError:
-            console.print("┌ [red] Memeriksa Pembaruan Git!")
+            console.print("┌ [red] Git Yeniləmələri yoxlanılır!")
             repo = Repo.init()
             if "origin" in repo.remotes:
                 origin = repo.remote("origin")
@@ -254,7 +254,7 @@ async def initiate_bot():
             await install_requirements(
                 "pip3 install --no-cache-dir -r requirements.txt"
             )
-            console.print("└ [red]Pembaruan Klien Git sukses\n")
+            console.print("└ [red]Git Client Update müvəffəqiyyəti\n")
 
 
 loop.run_until_complete(initiate_bot())
