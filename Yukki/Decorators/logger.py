@@ -9,27 +9,27 @@ def logging(mystic):
             if message.chat.username:
                 chatusername = f"@{message.chat.username}"
             else:
-                chatusername = "Private Group"
+                chatusername = "şəxsi qrup"
             try:
                 query = message.text.split(None, 1)[1]
-                what = "Permintaan Diberikan"
+                what = "Sorğu Qəbul Edildi"
             except:
                 try:
                     if not message.reply_to_message:
-                        what = "Command Given Only"
+                        what = "Yalnız əmr verilir"
                     else:
-                        what = "Replied to any file."
+                        what = "İstənilən fayla cavab verilir."
                 except:
                     what = "Command"
             logger_text = f"""
-__**Baru {what}**__
+__**Yeni {what}**__
 
-**Group:** {message.chat.title}
-**Pengguna:** {message.from_user.mention}
-**Username:** @{message.from_user.username}
-**ID Pengguna:** `{message.from_user.id}`
-**Link Group:** {chatusername}
-**Permintaan:** {message.text}"""
+**Qrup:** {message.chat.title}
+**İstifadəçi:** {message.from_user.mention}
+**İstifadəçi adı:** @{message.from_user.username}
+**İstifadəçi İdi:** `{message.from_user.id}`
+**Qrup Linkləri:** {chatusername}
+**Sorğu:** {message.text}"""
             if LOG_CLIENT != "None":
                 await LOG_CLIENT.send_message(
                     LOG_GROUP_ID,
