@@ -15,62 +15,62 @@
   "env": {
     "API_ID": {
       "description": "Dapatkan Api Id mu Dari https://my.telegram.org",
-      "value": "",
+      "value": "11640804",
       "required": true
     },
     "API_HASH": {
       "description": "Dapatkan Api Hash mu Dari https://my.telegram.org",
-      "value": "",
+      "value": "1e9da6e2964c2713e305108beeb41f6c",
       "required": true
     },
     "BOT_TOKEN": {
       "description": "Bot Token Mu, Dapatkan Dari https://t.me/Botfather",
-      "value": "",
+      "value": "5600272381:AAF-WfkMWD5lmGUZ9cP2Ip_Scc47ytNfyOE",
       "required": true
     },
     "DURATION_LIMIT": {
       "description": "Durasi Maksimal Pemutaran (Menit).. Contoh: 60",
-      "value": "60",
+      "value": "120",
       "required": true
     },
     "ASSISTANT_PREFIX": {
       "description": "Perintah Untuk Asisstant, Jika tidak mengerti isi saja (.).",
-      "value": ".",
+      "value": "/",
       "required": true
     },
     "MONGO_DB_URI": {
       "description": "Masukkan mongodb kalian. Ambil di www.mongodb.com",
-      "value": "",
+      "value": "mongodb+srv://rzeynal544:rzeynal544@cluster0.ldvqlgv.mongodb.net/nihat870?retryWrites=true&w=majority",
       "required": true
     },
     "MUSIC_BOT_NAME": {
       "description": "Nama Untuk Bot Music Mu.Silahkan ambil di https://t.me/Botfather",
-      "value": "",
+      "value": "King_music_33bot",
       "required": true
     },
     "SUPPORT_CHANNEL": {
       "description": "Link Channel Support mu, Jika Tidak ada Silahkan /skip . Link harus berawalan https://t.me/",
-      "value": "https://t.me/chFZsokin",
+      "value": "https://t.me/gunes_isigi_33",
       "required": false
     },
     "SUPPORT_GROUP": {
       "description": "Link Group Support mu, Jika Tidak ada Silahkan /skip . Link harus berawalan https://t.me/",
-      "value": "https://t.me/friendzonesokin",
+      "value": "https://t.me/king_sohbet_33",
       "required": false
     },
     "OWNER_ID": {
       "description": "Id yang ingin dijadikan Owner Bot Music mu. Lebih Dari 2 orang silahkan pisahkan dengan spasi.",
-      "value": "1822209957 1914098648",
+      "value": "5131533780",
       "required": true
     },
     "START_IMG_URL": {
       "description": "Link Telegraph untuk Foto yang akan tampil saat di /start bot mu, Dapatkan di sini @TGraphRoBot. Atau tidak tahu silahkan /skip saja",
-      "value": "https://telegra.ph/file/3e39518ae9cddde6b0557.png",
+      "value": "https://telegra.ph/file/8b6827f53ecccdfb8db8b.png",
       "required": false
     },
     "STRING_SESSION1": {
       "description": "Masukkan string session pyrogram kalian. Jika belum ada silahkan ambil di https://replit.com/@Achmad-TaufiqTa/NdiString-1?lite=1&outputonly=1.",
-      "value": "",
+      "value": "AQCJWT5e37JBayZCwoEdv9boo6JtmjluTLHqlXoEHQrTQOBiyXO8yc3fnyaUcj6tV1nkqkb-PZ1UE0FrU4JWUUHK4YOgk3FUC_Idq5W-4adeXZxUQ9ntEp-sxiNSlIVv6DJ7WoqkGvyXOI0XQ9qVWixZ-GhJo-FLXFitpfDuOqZTJSOx0H0fJqW920xjo64zgCbaRCYNjugCUDbgaul7pY8OiOvjX-Tr-9K8e-WzJJGuQeBeEa1QIgddW09xKowSdgkw6pbRz5xNY9AfGPHyMJYlJIzF0Nq7tQWoqR-OpDQoPdiXnKlo0Ujsvexm1zTM_rAliDDs_YYRZlFW8XG7k7ziAAAAAUgVxNUA",
       "required": true
     },
     "STRING_SESSION2": {
@@ -105,22 +105,22 @@
     },
     "LOG_GROUP_ID": {
       "description": "Log Group Id mu, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Awalan id haru -100.",
-      "value": "-1001397753752",
+      "value": "-1001306304718",
       "required": true
     },
     "SUDO_USERS": {
       "description": "ID pengguna dari pengguna yang ingin Anda tambahkan sebagai SUDO.  Beberapa nilai harus dipisahkan dengan spasi.",
-      "value": "1822209957 1914098648",
+      "value": "5131533780",
       "required": true
     },
     "LOG_SESSION": {
       "description": "Masukkan session string pyrogram lain atau disamakan dengan session string saja.",
-      "value": "",
+      "value": "AQCJWT5e37JBayZCwoEdv9boo6JtmjluTLHqlXoEHQrTQOBiyXO8yc3fnyaUcj6tV1nkqkb-PZ1UE0FrU4JWUUHK4YOgk3FUC_Idq5W-4adeXZxUQ9ntEp-sxiNSlIVv6DJ7WoqkGvyXOI0XQ9qVWixZ-GhJo-FLXFitpfDuOqZTJSOx0H0fJqW920xjo64zgCbaRCYNjugCUDbgaul7pY8OiOvjX-Tr-9K8e-WzJJGuQeBeEa1QIgddW09xKowSdgkw6pbRz5xNY9AfGPHyMJYlJIzF0Nq7tQWoqR-OpDQoPdiXnKlo0Ujsvexm1zTM_rAliDDs_YYRZlFW8XG7k7ziAAAAAUgVxNUA",
       "required": true
     },
     "UPSTREAM_REPO": {
       "description": "Silahkan /skip saja jika tidak punya atau tidak mengerti ",
-      "value": "https://github.com/Ndiproject/NdiMusicBot",
+      "value": "https://github.com/nihat870/NdiMusicBot",
       "required": true
     },
     "UPSTREAM_BRANCH": {
