@@ -462,10 +462,10 @@ Bütün Əmrlər üçün istifadə edin: /
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Kembali", callback_data="help_back"
+                        text="↪️ geri", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="✖️ Tutup", callback_data="close"
+                        text="✖️ bagla", callback_data="close"
                     ),
                 ],
             ]
