@@ -99,7 +99,7 @@ def search_markup(
                 text="≼", callback_data=f"popat 1|{query}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="🗑 ᴛᴜᴛᴜᴘ", callback_data=f"forceclose {query}|{user_id}"
+                text="🗑 bagla", callback_data=f"forceclose {query}|{user_id}"
             ),
             InlineKeyboardButton(
                 text="≽", callback_data=f"popat 1|{query}|{user_id}"
