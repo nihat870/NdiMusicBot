@@ -14,7 +14,7 @@ def check_markup(user_name, user_id, videoid):
                 callback_data=f"playlist_check {user_id}|Personal|{videoid}",
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 bağla", callback_data="close")],
     ]
     return buttons
 
@@ -31,7 +31,7 @@ def playlist_markup(user_name, user_id, videoid):
                 callback_data=f"show_genre {user_id}|Personal|{videoid}",
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 bağla", callback_data="close")],
     ]
     return buttons
 
@@ -83,7 +83,7 @@ def play_genre_playlist(user_id, type, videoid):
                 text="≼ ᴋᴇᴍʙᴀʟɪ",
                 callback_data=f"main_playlist {videoid}|{type}|{user_id}",
             ),
-            InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="close"),
+            InlineKeyboardButton(text="🗑 bağla", callback_data="close"),
         ],
     ]
     return buttons
@@ -135,7 +135,7 @@ def add_genre_markup(user_id, type, videoid):
             InlineKeyboardButton(
                 text="≼ ᴋᴇᴍʙᴀʟɪ", callback_data=f"goback {videoid}|{user_id}"
             ),
-            InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="close"),
+            InlineKeyboardButton(text="🗑 bağla", callback_data="close"),
         ],
     ]
     return buttons
@@ -178,7 +178,7 @@ def check_genre_markup(type, videoid, user_id):
                 text=f"Lainnya", callback_data=f"check_playlist {type}|Lainnya"
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 bağla", callback_data="close")],
     ]
     return buttons
 
@@ -201,7 +201,7 @@ def third_playlist_markup(user_name, user_id, third_name, userid, videoid):
                 callback_data=f"show_genre {userid}|third|{videoid}",
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 bağla", callback_data="close")],
     ]
     return buttons
 
@@ -215,7 +215,7 @@ def paste_queue_markup(url):
             InlineKeyboardButton(text="▢", callback_data=f"stopcb"),
         ],
         [InlineKeyboardButton(text="ᴘᴇʀɪᴋsᴀ ᴀɴᴛʀɪᴀɴ ᴅᴀғᴛᴀʀ ᴘᴜᴛᴀʀ", url=f"{url}")],
-        [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data=f"close")],
+        [InlineKeyboardButton(text="🗑 bağla", callback_data=f"close")],
     ]
     return buttons
 
@@ -229,7 +229,7 @@ def fetch_playlist(user_name, type, genre, user_id, url):
             ),
         ],
         [InlineKeyboardButton(text="ᴘᴇʀɪᴋsᴀ ᴀɴᴛʀɪᴀɴ ᴅᴀғᴛᴀʀ ᴘᴜᴛᴀʀ", url=f"{url}")],
-        [InlineKeyboardButton(text="🗑 ᴛᴜᴛᴜᴘ", callback_data=f"close")],
+        [InlineKeyboardButton(text="🗑 bağla", callback_data=f"close")],
     ]
     return buttons
 
@@ -241,7 +241,7 @@ def delete_playlist_markuup(type, genre):
                 text=f"ʏᴀ! ʜᴀᴘᴜs",
                 callback_data=f"delete_playlist {type}|{genre}",
             ),
-            InlineKeyboardButton(text="ᴛɪᴅᴀᴋ!", callback_data=f"close"),
+            InlineKeyboardButton(text="bağla!", callback_data=f"close"),
         ],
     ]
     return buttons
