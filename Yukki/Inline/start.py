@@ -55,17 +55,17 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨GROUP", url=f"{SUPPORT_GROUP}"
+                    text="📨Qrup", url=f"{SUPPORT_GROUP}"
                 ),
             ],
             [
                  InlineKeyboardButton(
-                    text="🥸 ᴏᴡɴᴇʀ 🥸", 
+                    text="🥸 Tərtibatçı 🥸", 
                 url=f"https://t.me/nihat_33",
                )
             ],
         ]
-        return f"🎛  **MEN {MUSIC_BOT_NAME}*", buttons
+        return f"🎛  **MƏN {MUSIC_BOT_NAME}*", buttons
     if SUPPORT_CHANNEL and not SUPPORT_GROUP:
         buttons = [
             [
@@ -85,7 +85,7 @@ def start_pannel():
             ],
             [
                  InlineKeyboardButton(
-                    text="🥸 ᴏᴡɴᴇʀ 🥸", 
+                    text="🥸 Tərtibatçı 🥸", 
                 url=f"https://t.me/nihat_33",
                )
             ],
@@ -113,7 +113,7 @@ def start_pannel():
             ],
             [
                  InlineKeyboardButton(
-                    text="🥸 ᴏᴡɴᴇʀ 🥸", 
+                    text="🥸 Tərtibatçı 🥸", 
                 url=f"https://t.me/nihat_33",
                )
             ],
@@ -159,7 +159,7 @@ def private_panel():
             ],
             [
                  InlineKeyboardButton(
-                    text="🥸 ᴏᴡɴᴇʀ 🥸", 
+                    text="🥸 Tərtibatçı 🥸", 
                 url=f"https://t.me/nihat_33",
                )
             ],
@@ -186,7 +186,7 @@ def private_panel():
             ],
             [
                  InlineKeyboardButton(
-                    text="🥸 ᴏᴡɴᴇʀ 🥸", 
+                    text="🥸 Tərtibatçı 🥸", 
                 url=f"https://t.me/nihat_33",
                )
             ],
@@ -216,7 +216,7 @@ def private_panel():
             ],
             [
                  InlineKeyboardButton(
-                    text="🥸 ᴏᴡɴᴇʀ 🥸", 
+                    text="🥸 Tərtibatçı 🥸", 
                 url=f"https://t.me/nihat_33",
                )
             ],
