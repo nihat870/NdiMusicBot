@@ -99,13 +99,13 @@ async def initiate_bot():
     global ASSID5, ASSNAME5, ASSMENTION5, ASSUSERNAME5
     global Heroku_cli, Heroku_app
     os.system("clear")
-    header = Table(show_header=True, header_style="qalın sarı")
+    header = Table(show_header=True, header_style="thick yellow")
     header.add_column(
         "\x59\x75\x6b\x6b\x69\x20\x4d\x75\x73\x69\x63\x20\x42\x6f\x74\x20\x3a\x20\x54\x68\x65\x20\x4d\x6f\x73\x74\x20\x41\x64\x76\x61\x6e\x63\x65\x64\x20\x4d\x75\x73\x69\x63\x20\x42\x6f\x74"
     )
     console.print(header)
     with console.status(
-        "[qırmızı] King Music Bot Başlamaq...",
+        "[red] King Music Bot Başlamaq...",
     ) as status:
         console.print("┌ [red]Bot yenidən başladın...\n")
         await app.start()
