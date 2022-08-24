@@ -15,17 +15,17 @@
   "env": {
     "API_ID": {
       "description": "Dapatkan Api Id mu Dari https://my.telegram.org",
-      "value": "11640804",
+      "value": "",
       "required": true
     },
     "API_HASH": {
       "description": "Dapatkan Api Hash mu Dari https://my.telegram.org",
-      "value": "1e9da6e2964c2713e305108beeb41f6c",
+      "value": "",
       "required": true
     },
     "BOT_TOKEN": {
       "description": "Bot Token Mu, Dapatkan Dari https://t.me/Botfather",
-      "value": "5600272381:AAF-WfkMWD5lmGUZ9cP2Ip_Scc47ytNfyOE",
+      "value": "",
       "required": true
     },
     "DURATION_LIMIT": {
@@ -40,27 +40,27 @@
     },
     "MONGO_DB_URI": {
       "description": "Masukkan mongodb kalian. Ambil di www.mongodb.com",
-      "value": "mongodb+srv://rzeynal544:rzeynal544@cluster0.ldvqlgv.mongodb.net/nihat870?retryWrites=true&w=majority",
+      "value": "",
       "required": true
     },
     "MUSIC_BOT_NAME": {
       "description": "Nama Untuk Bot Music Mu.Silahkan ambil di https://t.me/Botfather",
-      "value": "King_music_33bot",
+      "value": "",
       "required": true
     },
     "SUPPORT_CHANNEL": {
       "description": "Link Channel Support mu, Jika Tidak ada Silahkan /skip . Link harus berawalan https://t.me/",
-      "value": "https://t.me/gunes_isigi_33",
+      "value": ""
       "required": false
     },
     "SUPPORT_GROUP": {
       "description": "Link Group Support mu, Jika Tidak ada Silahkan /skip . Link harus berawalan https://t.me/",
-      "value": "https://t.me/king_sohbet_33",
+      "value": "",
       "required": false
     },
     "OWNER_ID": {
       "description": "Id yang ingin dijadikan Owner Bot Music mu. Lebih Dari 2 orang silahkan pisahkan dengan spasi.",
-      "value": "5131533780",
+      "value": "",
       "required": true
     },
     "START_IMG_URL": {
@@ -70,7 +70,7 @@
     },
     "STRING_SESSION1": {
       "description": "Masukkan string session pyrogram kalian. Jika belum ada silahkan ambil di https://replit.com/@Achmad-TaufiqTa/NdiString-1?lite=1&outputonly=1.",
-      "value": "AQCJWT5e37JBayZCwoEdv9boo6JtmjluTLHqlXoEHQrTQOBiyXO8yc3fnyaUcj6tV1nkqkb-PZ1UE0FrU4JWUUHK4YOgk3FUC_Idq5W-4adeXZxUQ9ntEp-sxiNSlIVv6DJ7WoqkGvyXOI0XQ9qVWixZ-GhJo-FLXFitpfDuOqZTJSOx0H0fJqW920xjo64zgCbaRCYNjugCUDbgaul7pY8OiOvjX-Tr-9K8e-WzJJGuQeBeEa1QIgddW09xKowSdgkw6pbRz5xNY9AfGPHyMJYlJIzF0Nq7tQWoqR-OpDQoPdiXnKlo0Ujsvexm1zTM_rAliDDs_YYRZlFW8XG7k7ziAAAAAUgVxNUA",
+      "value": "",
       "required": true
     },
     "STRING_SESSION2": {
@@ -105,17 +105,17 @@
     },
     "LOG_GROUP_ID": {
       "description": "Log Group Id mu, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Awalan id haru -100.",
-      "value": "-1001306304718",
+      "value": "",
       "required": true
     },
     "SUDO_USERS": {
       "description": "ID pengguna dari pengguna yang ingin Anda tambahkan sebagai SUDO.  Beberapa nilai harus dipisahkan dengan spasi.",
-      "value": "5131533780",
+      "value": "",
       "required": true
     },
     "LOG_SESSION": {
       "description": "Masukkan session string pyrogram lain atau disamakan dengan session string saja.",
-      "value": "AQCJWT5e37JBayZCwoEdv9boo6JtmjluTLHqlXoEHQrTQOBiyXO8yc3fnyaUcj6tV1nkqkb-PZ1UE0FrU4JWUUHK4YOgk3FUC_Idq5W-4adeXZxUQ9ntEp-sxiNSlIVv6DJ7WoqkGvyXOI0XQ9qVWixZ-GhJo-FLXFitpfDuOqZTJSOx0H0fJqW920xjo64zgCbaRCYNjugCUDbgaul7pY8OiOvjX-Tr-9K8e-WzJJGuQeBeEa1QIgddW09xKowSdgkw6pbRz5xNY9AfGPHyMJYlJIzF0Nq7tQWoqR-OpDQoPdiXnKlo0Ujsvexm1zTM_rAliDDs_YYRZlFW8XG7k7ziAAAAAUgVxNUA",
+      "value": "",
       "required": true
     },
     "UPSTREAM_REPO": {
